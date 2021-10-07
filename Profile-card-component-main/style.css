@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  margin: 0 auto;
+  font-family: Kumbh Sans;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 370px;
+  background-color: white;
+  border-radius: 15px;
+  z-index: 1;
+  text-align: center;
+}
+
+.top {
+  transform: rotate(0deg);
+  position: absolute;
+  right: 50%;
+  bottom: 40%;
+}
+
+.bottom {
+  position: absolute;
+  left: 50%;
+  top: 49%;
+}
+
+.card {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profile {
+  border-radius: 100px;
+  position: absolute;
+  border: 5px solid white;
+  bottom: 47%;
+  left: 35%;
+}
+
+p {
+  display: inline-block;
+}
+
+.topic {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+}
+
+.subtopic {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.heading {
+  padding-top: 46px;
+}
+
+.sub-heading {
+  display: block;
+  margin-top: -10px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.followers {
+  margin-top: -7px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.followers2 {
+  margin-top: -31px;
+  border: 1px solid black;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.followers2 p {
+  font-size: 12px;
+}
+
+hr {
+  color: hsl(227, 10%, 46%);
+}
+
+table {
+  margin-top: 34px;
+  width: 100%;
+  align-content: center;
+  border-collapse: collapse;
+}
+
+th {
+  line-height: 0px;
+}
+
+td {
+  line-height: 10px;
+}
+
+td p {
+  font-size: 12px;
+  display: inline-block;
+}
+
+th p {
+  display: inline;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 80%;
+    height: 375px;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .profile {
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    bottom: 49%;
+  }
+
+  .heading {
+    padding-top: 50px;
+  }
+
+  .top {
+    bottom: 30%;
+  }
+
+  .bottom {
+    top: 30%;
+  }
+}
