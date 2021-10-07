@@ -26,6 +26,7 @@ body {
   border-radius: 15px;
   z-index: 1;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 .top {
@@ -135,6 +136,7 @@ th p {
     height: 375px;
     z-index: 1;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   }
 
   .profile {
