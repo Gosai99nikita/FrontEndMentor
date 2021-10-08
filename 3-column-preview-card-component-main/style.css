@@ -1,0 +1,196 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body,
+html {
+  background-color: hsl(0, 0%, 95%);
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 75vh;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.first {
+  width: 300px;
+  height: 470px;
+  background-color: hsl(31, 77%, 52%);
+  border-bottom-left-radius: inherit;
+  border-top-left-radius: inherit;
+  padding-left: 15px;
+}
+
+.second {
+  width: 300px;
+  height: 470px;
+  background-color: hsl(184, 100%, 22%);
+  padding-left: 15px;
+}
+
+.third {
+  width: 300px;
+  height: 470px;
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding-left: 15px;
+}
+
+p {
+  color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  padding: 28px;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+}
+
+.heading {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: Big Shoulders Display;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: hsl(0, 0%, 95%);
+}
+
+.para {
+  margin-top: -20px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  font-family: Lexend Deca;
+  padding-right: 60px;
+}
+
+.icon {
+  margin-top: 60px;
+  margin-left: 26px;
+}
+
+button {
+  padding: 10px auto;
+  height: 40px;
+  width: 120px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  border: none;
+  margin-top: 20;
+  margin-left: 26px;
+  font-family: Lexend Deca;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.first button {
+  color: hsl(31, 77%, 52%);
+}
+
+.second button {
+  color: hsl(184, 100%, 22%);
+}
+
+.third button {
+  color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 1200px) {
+  .first {
+    width: 250px;
+    height: 500px;
+  }
+
+  .second {
+    width: 250px;
+    height: 500px;
+  }
+
+  .second button {
+    margin-top: 30px;
+  }
+
+  .third {
+    width: 250px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .first {
+    border-top-right-radius: 0px;
+  }
+
+  .second {
+    width: 250px;
+    height: 500px;
+    border-bottom-right-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+
+  .second button {
+    margin-top: 30px;
+  }
+
+  .third {
+    width: 250px;
+    height: 500px;
+    border-radius: 0px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 740px) {
+  .first {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+  }
+
+  .second {
+    border-radius: 0px;
+  }
+
+  .third {
+    width: 250px;
+    height: 500px;
+    border-radius: 0px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .first {
+    height: 550px;
+  }
+
+  .second {
+    height: 550px;
+  }
+
+  .second button {
+    margin-top: 30px;
+  }
+
+  .third {
+    height: 550px;
+  }
+}
