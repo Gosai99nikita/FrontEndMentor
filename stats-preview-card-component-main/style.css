@@ -1,0 +1,252 @@
+/* 
+  <style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style> */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: auto;
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+  background-color: hsl(277, 64%, 61%);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 10px;
+}
+
+.container-left {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: inherit;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 80px;
+}
+
+.container-right {
+  background-image: url("images/image-header-desktop.jpg");
+  border-radius: inherit;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  filter: opacity(0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-header {
+  transform: scale(0.8);
+}
+
+p {
+  font-size: 15px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Inter;
+  color: hsl(0, 0%, 100%);
+}
+
+.para {
+  font-weight: 400;
+  font-family: Lexend Deca;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 25px;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+table {
+  width: 90%;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+th {
+  font-family: Inter;
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+td {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 12px;
+  font-family: Lexend Deca;
+}
+
+@media only screen and (max-width: 903px) {
+  .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 60%;
+    height: 44em;
+    grid-template-columns: 100%;
+    grid-row: 2;
+    grid-template-rows: 50% 50%;
+  }
+  .container-left {
+    order: 2;
+  }
+  .container-right {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 60%;
+    height: 49em;
+    grid-template-columns: 100%;
+    grid-row: 2;
+    grid-template-rows: 50% 50%;
+  }
+  .container-left {
+    order: 2;
+  }
+  .container-right {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 60%;
+    height: 57rem;
+
+    grid-template-columns: 100%;
+    grid-row: 2;
+    grid-template-rows: 50% 50%;
+    overflow: visible;
+  }
+  .container-left {
+    order: 2;
+  }
+  .container-right {
+    background-image: url("images/image-header-mobile.jpg");
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .container {
+    margin: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: hsl(277, 64%, 61%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 60%;
+    height: 55rem;
+    grid-template-columns: 100%;
+    grid-row: 2;
+    grid-template-rows: 30% 70%;
+    border-top-left-radius: 10px;
+  }
+  .container-left {
+    order: 2;
+    border-top-left-radius: 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-right {
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    padding: 0px;
+    background-image: url("images/image-header-mobile.jpg");
+    order: 1;
+  }
+
+  table {
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 0px;
+    margin: 0px auto;
+    align-items: center;
+    position: absolute;
+  }
+  tr {
+    float: center;
+  }
+  th {
+    font-family: Inter;
+    font-size: 20px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    margin-top: 40px;
+  }
+
+  td {
+    margin-top: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 12px;
+    text-align: center;
+    font-family: Lexend Deca;
+    padding-bottom: 33px;
+  }
+
+  /* thead th:not(:first-child) {
+    display: none;
+  } */
+  td,
+  th {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* clear: both; */
+  }
+
+  /* thead {
+    position: absolute;
+    align-items: center;
+  } */
+
+  tbody {
+    position: absolute;
+    top: 40px;
+    padding-left: 30%;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+  .para {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 493px) {
+  .container {
+    height: 67em;
+  }
+}
+
+@media only screen and (max-width: 423px) {
+  .container {
+    height: 70em;
+  }
+}
