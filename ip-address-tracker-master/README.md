@@ -6,3 +6,4 @@
 - Search for any IP addresses or domains and see the key information and location
 
 ---
+Preview: https://laughing-goldstine-6c497d.netlify.app/
