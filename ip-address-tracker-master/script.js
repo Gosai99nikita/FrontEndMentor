@@ -6,7 +6,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibmlraXRhNjciLCJhIjoiY2t1bGJqZWFxMTJkbDJxbzY4dXQ3dmw3YiJ9.Yi21Ly7fCpf5v_BNVTvBdg'
+    accessToken: {access_token}
 }).addTo(mymap);
 
 
@@ -22,7 +22,7 @@ var marker = L.marker([34.0614, -118.08162], {icon: greenIcon}).addTo(mymap);
 document.querySelector('#button1').addEventListener('click', async function(e){
     e.preventDefault();
     var input = document.querySelector('#IP');
-    const response = await fetch('https://geo.ipify.org/api/v1?apiKey=at_Ni1bnBIXQxTPUyEuoDRlu05rq9b5V&ipAddress='+input.value)
+    const response = await fetch('https://geo.ipify.org/api/v1?apiKey={APIKEY}='+input.value)
     const data = await response.json();
     var span = document.querySelectorAll('span');
     
