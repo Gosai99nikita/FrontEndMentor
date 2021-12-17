@@ -86,9 +86,6 @@ for (let c of checktheme) {
 // LOGIC
 for (let b of buttons) {
   b.addEventListener("click", function (e) {
-    // var regex = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-    // var regex2 = ["+", "-", "/", "x"];
-
     if (ans == true) {
       y = "";
       x = "";
@@ -119,7 +116,11 @@ for (let b of buttons) {
       resultbox.innerHTML = "";
       operator.innerHTML = "=";
       ans = true;
-    } else if (e.target.value != 88) {
+    } else if (
+      /\d+/.test(e.target.innerHTML) ||
+      e.target.innerHTML == "." ||
+      e.target.innerHTML == "DEL"
+    ) {
       if (e.target.innerHTML == "DEL") {
         resultbox.innerHTML = resultbox.innerHTML.substring(0, x.length - 1);
         x = resultbox.innerHTML;
@@ -129,7 +130,7 @@ for (let b of buttons) {
         x = resultbox.innerHTML;
         ans = false;
       }
-    } else if (e.target.value == 88) {
+    } else {
       OP = e.target.innerHTML;
       console.log(OP);
       y = x;
