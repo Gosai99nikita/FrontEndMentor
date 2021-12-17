@@ -42,7 +42,6 @@ p {
 }
 
 .themechanger {
-  width: 60px;
   height: auto;
   background-color: black;
   border-radius: 50px;
@@ -72,10 +71,9 @@ p {
   height: 600px;
   width: 500px;
   /* border: 1px solid white; */
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* results */
@@ -311,12 +309,12 @@ ul {
 
 @media only screen and (max-width: 362px) {
   .calc_mainbox {
-    height: 800px;
+    height: 700px;
     width: 80%;
     /* border: 1px solid white; */
   }
   .calcbox {
-    height: 600px;
+    height: 500px;
   }
   li {
     width: 50px;
@@ -347,12 +345,12 @@ ul {
 
 @media only screen and (max-width: 362px) {
   .calc_mainbox {
-    height: 900px;
+    height: 700px;
     width: 80%;
     /* border: 1px solid white; */
   }
   .calcbox {
-    height: 800px;
+    height: 500px;
   }
   li {
     width: 50px;
