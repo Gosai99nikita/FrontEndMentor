@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <div>
+    <div class="calc_mainbox">
+      <div class="mainheading">
+        <p>calc</p>    
+          <div class="themes">
+            <label class="themelabel" for="theme1"> 1 </label>
+            <label class="themelabel" for="theme2"> 2 </label>
+            <label class="themelabel" for="theme3"> 3 </label>
+            <div class="themechanger">
+              <input class="checktheme"  type="radio" name="check1" value="theme1" id="theme1" checked>
+              <input class="checktheme" type="radio" name="check1" value="theme2" id="theme2">
+              <input class="checktheme" type="radio" name="check1" value="theme3" id="theme3">
+            </div>
+          </div>
+          <p class="themelabeltop">THEME</p>
+        
+
+      </div>
+
+      <!-- result -->
+      <div class="resultbox">
+        
+
+      </div>
+      <p id="operator">=</p>
+
+      <!-- //calc box -->
+      <div class="calcbox">
+        <ul>
+
+          <li class="colortheme1 digits1" value=7 >7</li>
+          <li class="colortheme1 digits1" value=8>8</li>
+          <li class="colortheme1 digits1" value=9>9</li>
+          <li id="del" class="colorbutton fontsize" value=-1>DEL</li>
+          <li class="colortheme1 digits1" value=4>4</li>
+          <li class="colortheme1 digits1" value=5>5</li>
+          <li class="colortheme1 digits1" value=6>6</li>
+          <li class="colortheme1 digits1" value=88>+</li>
+          <li class="colortheme1 digits1" value=1>1</li>
+          <li class="colortheme1 digits1" value=2>2</li>
+          <li class="colortheme1 digits1" value=3>3</li>
+          <li class="colortheme1 digits1" value=88>-</li>
+          <li class="colortheme1 digits1" value=".">.</li>
+          <li class="colortheme1 digits1" value=0>0</li>
+          <li class="colortheme1 digits1" value=88>/</li>
+          <li class="colortheme1 digits1" value=88>x</li>
+       
+          <li id="reset" class="resetwidth colorbutton" value=-1>RESET</li>
+         <li id="equalto" class="resetwidth equaltocolor" value=-1>=</li>
+          
+ 
+        </ul>
+
+      </div>
+
+    </div>
+    
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
